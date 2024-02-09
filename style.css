@@ -1,0 +1,31 @@
+.nav__wrapper {
+    height: 82px;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    padding-left: 14px;
+    padding-right: 14px;
+    align-items: center;
+    background-color: grey;
+}
+
+.nav__menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav__menu ul li {
+    padding-right: 10px;
+}
+
+.nav__menu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav__logo img {
+    width: 105px;
+    height: 55px;
+}
