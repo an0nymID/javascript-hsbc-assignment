@@ -1,16 +1,19 @@
 
 
 /* --------------------------------------------------- */
+
+
 .nav__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 82px;
     width: auto;
     padding: 0 14px 0;
-    background-color: grey;
+    background-color: black;
     justify-content: space-around;
+
 }
 
 .nav__menu ul{
@@ -31,6 +34,7 @@
 .nav__logo img {
     width: 105px;
     height: 55px;
+    cursor: pointer;
 }
 
 
@@ -42,19 +46,66 @@
 
 .nav__search form input {
     border: none;
+    font-size: 16px;
     outline: none;
-    width: 300px;
+    width: 270px;
     height: 33px;
+    background-color: transparent;
+    color: white;
+    padding: 0 16px 0;
+    border-right: #a9a9a9;
 }
 
 .nav__search form button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* background-image: url('./assets//search2.svg'); */
     cursor: pointer;
-    height: 33px;
+    height: 30px;
+    width: 30px;
+    /* background-size: cover;
+    background-position: center; */
+    margin-right: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    font-family: inherit;
     background-color: transparent;
-    color: transparent;
-    outline: none;
-    box-shadow: none;
+    outline: 0;
+    border: none;
+    color: #a9a9a9;
+}
+
+.nav__login {
+    margin-left:10px ;
+}
+
+.nav__login button {
+    background-color: rgb(112, 186, 202);
+    height: 33px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(112, 186, 202);
+    height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 3px red;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form__wrapper {
+    border: 1px solid #a9a9a9;
+    border-radius: 99px;
 }

@@ -1,47 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Top Manga List</title>
-</head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Top Manga List</title>
+   </head>
 
-<body style="padding: 0; margin: 0; box-sizing: border-box;">
-   <header class="header">
-      <nav class="nav__1">
-         <div class="nav__wrapper">
-            <div class="nav__logo">
-               <img src="./assets/logo.png" alt="logo">
+   <body
+      style="padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif; background-color: black;">
+      <header class="header">
+         <nav class="nav__1">
+            <div class="nav__wrapper">
+               <div class="nav__logo">
+                  <img src="./assets/logo.png" alt="logo">
+               </div>
+               <div class="nav__menu">
+                  <ul>
+                     <li><a href="#">PEMBAHARUAN</a></li>
+                     <li><a href="#">UNGGULAN</a></li>
+                     <li><a href="#">DAFTAR MANGA</a></li>
+                     <li><a href="#">CREATORS</a></li>
+                     <li><a href="#">DAFTAR FAVORIT</a></li>
+                     <li><a href="#">TENTANG KAMI</a></li>
+                  </ul>
+               </div>
+               <div class="nav__search">
+                  <form class="form__wrapper">
+                     <input type="text"
+                        placeholder="Cari berdasarkan judul atau penulis">
+                     <button type="submit"><img src="./assets//search.svg" alt=""></button>
+                  </form>
+               </div>
+               <div class="nav__login">
+                  <button>LOGIN</button>
+               </div>
             </div>
-            <div class="nav__menu">
-               <ul>
-                  <li><a href="#">PEMBAHARUAN</a></li>
-                  <li><a href="#">UNGGULAN</a></li>
-                  <li><a href="#">DAFTAR MANGA</a></li>
-                  <li><a href="#">CREATORS</a></li>
-                  <li><a href="#">DAFTAR FAVORIT</a></li>
-                  <li><a href="#">TENTANG KAMI</a></li>
-               </ul>
+         </nav>
+      </header>
+      
+      <main>
+         <section>
+            <div class="carousel__wrapper">
+
             </div>
-            <div class="nav__search">
-               <form action="">
-                  <input type="text" placeholder="Cari berdasarkan judul atau penulis">
-                  <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 50 50"
-                     style="fill:#737373;">
-                     <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
-                     </svg></button>
-               </form>
+            <div class="card__title">
+               Update Chapter Top Manga List
             </div>
-            <div class="nav__login">
-               <button>LOGIN</button>
+            <div id="card__wrapper" style="display: grid; grid-template-columns: auto auto auto auto; width: 90%; margin: auto; gap: 20px;"></div>
+            <!-- <div class="card__wrapper" style="display: grid; grid-template-columns: auto auto auto auto; width: 90%; margin: auto; gap: 20px;">
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; width: 110px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div>
+               <div class="card__1"
+                  style="display: flex; flex-direction: row; gap: 10px;">
+                  <img src="./assets//manga-image.jpg" alt="manga-image"
+                     class="card__image"
+                     style="height: 150px; border: 1px solid lightblue;">
+                  <div class="card__item"
+                     style="display: flex; flex-direction: column; justify-content: space-around;">
+                     <div class="card__item__title" style="font-weight: 600; color: rgb(21, 21, 190);">
+                        Jujutsu Kaisen
+                     </div>
+                     <div class="card__item__rating" style="color: whitesmoke;">
+                        Rate : &star; 9.0
+                     </div>
+                     <div class="card__item__chapter" style="font-weight: 600; font-size: 13px; background-color: lightgrey; padding: 5px; text-align: center;">
+                        Chapter 250
+                     </div>
+                     <div class="card__item__createdat" style="color: whitesmoke;">
+                        17 Jam lalu
+                     </div>
+                  </div>
+               </div> -->
             </div>
-         </div>
-      </nav>
-   </header>
-   <script src="./script.js"></script>
-</body>
+         </section>
+         <section>
+            <div class="pagination__wrapper" style="color: white; display: flex; flex-direction: row; justify-content: center; gap: 10px; margin-top: 50px; margin-bottom: 40px;">
+               <div id="pagination__prev" style="cursor: pointer;">&lt; Prev</div>
+               <div id="pagination__page">1</div>
+               <div>of</div>
+               <div id="pagination__max"></div>
+               <div id="pagination__next" style="cursor: pointer;">Next &gt;</div>
+            </div>
+         </section>
+      </main>
+
+      
+      <script src="./script.js"></script>
+   </body>
 
 </html>
